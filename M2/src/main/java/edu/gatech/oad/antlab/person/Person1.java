@@ -31,7 +31,13 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+		String toReturn = null;
+		String holder = null;
+		StringBuilder str = new StringBuilder(input);
+		holder = str.substring(2);
+		toReturn = holder + str.charAt(0) + str.charAt(1);
+
+	  return toReturn;
 	}
 	
 	/**
