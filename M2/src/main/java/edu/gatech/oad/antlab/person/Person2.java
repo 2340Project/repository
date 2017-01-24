@@ -1,4 +1,5 @@
 package edu.gatech.oad.antlab.person;
+import java.util.Random;
 
 /**
  *  A simple class for person 2
@@ -9,6 +10,7 @@ package edu.gatech.oad.antlab.person;
  * @version 1.1
  */
 public class Person2 {
+    private static Random random = new Random();
     /** Holds the persons real name */
     private String name;
 	 	/**
@@ -30,8 +32,16 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+        String param = input;
+        StringBuilder nameHolder = new StringBuilder();
+        for (int i = 0; i < name.length; i++) {
+            nameHolder.append(param.charAt(random.nextInt(param.length)));
+        }
+        return nameHolder;
+
+        /*StringBuilder name = new StringBuilder(input);
+        String randomCharacter = name.substring(1);
+        String toBeReturned =*/
 	}
 	/**
 	 * Return a string rep of this object
