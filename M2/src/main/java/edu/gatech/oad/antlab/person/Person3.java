@@ -41,13 +41,13 @@ public class Person3 {
 	 * @param input the string to be reversed
 	 * @return the reversed string
 	 */
-	private String calc(String input) {
+	public static String calc(String input) {
 	  //Person 3 put your implementation here
-		String originalInput = null;
-      String reversedInput = null;
-		StringBuilder builder = new StringBuilder(originalInput);
-		reversedInput =
-
-	  return reversedInput;
+      StringBuilder sb = new StringBuilder(input);
+      StringBuilder reversed;
+      reversed = sb.reverse();
+      return reversed.toString();
 	}
+
+
 }
