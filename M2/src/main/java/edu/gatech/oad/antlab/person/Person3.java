@@ -43,10 +43,11 @@ public class Person3 {
 	 */
 	public static String calc(String input) {
 	  //Person 3 put your implementation here
-		StringBuilder sb = new StringBuilder(input);
-		StringBuilder reversed;
-		reversed = sb.reverse();
-		return reversed.toString();
+      StringBuilder sb = new StringBuilder(input);
+      StringBuilder reversed;
+      reversed = sb.reverse();
+      return reversed.toString();
 	}
+
 
 }
