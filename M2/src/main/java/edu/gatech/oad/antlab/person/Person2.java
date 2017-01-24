@@ -34,10 +34,10 @@ public class Person2 {
 	private String calc(String input) {
         String param = input;
         StringBuilder nameHolder = new StringBuilder();
-        for (int i = 0; i < name.length; i++) {
-            nameHolder.append(param.charAt(random.nextInt(param.length)));
+        for (int i = 0; i < name.length(); i++) {
+            nameHolder.append(param.charAt(random.nextInt(param.length())));
         }
-        return nameHolder;
+        return nameHolder.toString();
 
         /*StringBuilder name = new StringBuilder(input);
         String randomCharacter = name.substring(1);
