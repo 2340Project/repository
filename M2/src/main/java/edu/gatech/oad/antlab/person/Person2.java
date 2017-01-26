@@ -32,10 +32,9 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-        String param = input;
         StringBuilder nameHolder = new StringBuilder();
         for (int i = 0; i < name.length(); i++) {
-            nameHolder.append(param.charAt(random.nextInt(param.length())));
+            nameHolder.append(input.charAt(random.nextInt(input.length())));
         }
         return nameHolder.toString();
 
@@ -48,7 +47,7 @@ public class Person2 {
 	 * that varies with an input string
 	 *
 	 * @param input the varying string
-	 * @return the string representing the 
+	 * @return the string representing the
 	 *         object
 	 */
 	public String toString(String input) {
