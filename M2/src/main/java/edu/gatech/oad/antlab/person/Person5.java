@@ -32,7 +32,7 @@ public class Person5 {
 	private String calc(String input) {
 	  //Person 5 put your implementation here
 		char [] arrayInput = input.toCharArray();
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i <= 2; i++) {
 			for(int j = arrayInput.length - 1; j > 0; j--) {
 				char temp = arrayInput[j];
 				arrayInput[j] = arrayInput[j - 1];
